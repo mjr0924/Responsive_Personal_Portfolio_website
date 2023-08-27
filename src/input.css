@@ -4,5 +4,23 @@
 @layer base {
     html {
       font-family: 'poppins', system-ui, sans-serif;
+      font-size: 62.5%;
+      overflow-x: hidden;
+    }
+    .navbar a{
+      position: relative;
+      font-size: 1.7rem;
+      color: #fff;
+      font-weight: 500;
+      margin-right: 3.5rem;
+    }
+    .navbar a.active::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 0.2rem;
+      background: #fff;
     }
 }
