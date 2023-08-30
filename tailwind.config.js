@@ -10,6 +10,9 @@ module.exports = {
         'white-color':'#fdfdfd',
         'shadow-color':'rgba(0,0,0,.2)'
       },
+      // boxShadow: {
+      //   'xx': '0 .2rem .5rem rgba(0,0,0,.2)',
+      // },
     },
    
   },
