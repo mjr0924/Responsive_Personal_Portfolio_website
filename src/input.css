@@ -20,7 +20,7 @@
       @apply inline-block py-5 px-11 bg-main-color rounded-lg shadow-xx text-2xl text-white font-semibold tracking-widest hover:bg-transparent hover:text-main-color transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none border-2 border-solid border-transparent hover:border-main-color
     }
     .home .profession-container{
-      @apply absolute top-1/2 right-0 -translate-y-1/2 w-[768px] h-[768px] overflow-hidden pointer-events-none
+      @apply absolute top-1/2 right-0 -translate-y-1/2 w-[768px] h-full overflow-hidden pointer-events-none
     }
     .home .profession-container .profession-box{
       @apply absolute top-0 right-0 w-[768px] h-[768px] rounded-full flex justify-center items-center
@@ -63,5 +63,8 @@
       border-bottom: 384px solid #754ef9;
       border-left: 384px solid transparent;
       @apply absolute top-0 right-0 w-0 h-0;
+    }
+    .home-img img{
+      @apply absolute bottom-0 right-0 h-full pointer-events-none
     }
 }
