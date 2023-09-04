@@ -502,7 +502,7 @@ html {
   color: rgb(253 253 253 / var(--tw-text-opacity));
 }
 
-.home .btn {
+.btn {
   display: inline-block;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 0.5rem;
@@ -531,7 +531,7 @@ html {
   transition-duration: 150ms;
 }
 
-.home .btn:hover {
+.btn:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-border-opacity: 1;
@@ -542,11 +542,11 @@ html {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .home .btn {
+  .btn {
     transition-property: none;
   }
 
-  .home .btn:hover {
+  .btn:hover {
     transform: none;
   }
 }
@@ -594,7 +594,7 @@ html {
   color: rgb(117 78 249 / var(--tw-text-opacity));
 }
 
-.home .profession-container .profession-box .profession h3 {
+.home .profession-container .profession-box .profession h2 {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 1;
@@ -655,6 +655,10 @@ html {
   bottom: 0px;
   right: 0px;
   height: 100%;
+}
+
+span{
+  color: #754ef9;
 }
 
 *, ::before, ::after {
