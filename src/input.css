@@ -10,6 +10,10 @@
     .header{
       @apply bg-transparent fixed top-0 left-0 w-full py-8 px-[7%] flex items-center justify-between  z-10 
     }
+    .header.sticky{
+      background-color: #754ef9;
+      box-shadow: 0 0.1rem 1rem rgba(0,0,0,.2);
+    }
     .logo{
       @apply text-[2.5rem] text-main-color font-semibold cursor-pointer 
     }
@@ -69,5 +73,9 @@
     }
     span{
       color: #754ef9;
+    }
+    .about-content h2{
+      text-align: left;
+      line-height: 1.2;
     }
 }
