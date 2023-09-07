@@ -15,6 +15,9 @@ module.exports = {
       },
       rotate: {
         'def': 'calc(360deg / 4 * var(--i)) ',
+      },
+      flex: {
+        'xx': '1 1 30rem'
       }
     },
    

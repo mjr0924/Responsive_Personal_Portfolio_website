@@ -10,6 +10,9 @@
     p,h1,h2,h3,h4,h5,h6{
       color: #333;
     }
+    h3{
+      @apply text-4xl font-bold leading-[1] my-1
+    }
     .header{
       @apply bg-transparent fixed top-0 left-0 w-full py-8 px-[7%] flex items-center justify-between  z-10 
     }
@@ -94,5 +97,22 @@
     .about-content h2{
       text-align: left;
       line-height: 1.2;
+    }
+    .services-box{
+      @apply flex-xx bg-bg-color pt-12 px-8 pb-16 rounded-3xl shadow-sm text-center border-y-4 border-x border-solid border-y-main-color
+    }
+    .services-box i{
+      @apply text-[7rem] text-main-color
+    }
+    .services-container .services-box,
+    .services-box h3{
+      transition: .3s ease;
+    }
+    .services-box:hover h3{
+      color: #754ef9;
+    }
+    .services-container .services-box:hover{
+      box-shadow: 0 .1rem 2rem rgba(0,0,0,.2);
+      transform: scale(1.05);
     }
 }
