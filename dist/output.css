@@ -440,6 +440,12 @@ html {
   overflow-x: hidden;
 }
 
+section {
+  min-height: 100vh;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
 p,h1,h2,h3,h4,h5,h6{
   color: #333;
 }
@@ -485,6 +491,14 @@ h3 {
 .header.sticky #darkMode-icon{
   color: #333;
   opacity: .9;
+}
+
+.heading {
+  margin-bottom: 5rem;
+  text-align: center;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 700;
 }
 
 .logo {
@@ -745,6 +759,39 @@ span{
   transform: scale(1.05);
 }
 
+.portfolio-box {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.portfolio-box img {
+  width: 100%;
+}
+
+.portfolio-box .portfolio-layer{
+  background: linear-gradient(rgba(0,0,0,.1),#754ef9);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(253 253 253 / var(--tw-text-opacity))
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -859,20 +906,16 @@ span{
   margin-bottom: 2rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .flex {
   display: flex;
 }
 
-.min-h-\[auto\] {
-  min-height: auto;
-}
-
-.min-h-screen {
-  min-height: 100vh;
+.grid {
+  display: grid;
 }
 
 .w-1\/2 {
@@ -891,6 +934,10 @@ span{
   cursor: pointer;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -901,6 +948,10 @@ span{
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .gap-16 {
@@ -916,17 +967,16 @@ span{
   padding-right: 0px;
 }
 
-.px-\[7\%\] {
-  padding-left: 7%;
-  padding-right: 7%;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
 }
 
 .pb-28 {
   padding-bottom: 7rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
 }
 
 .pb-8 {
@@ -939,10 +989,6 @@ span{
 
 .pt-40 {
   padding-top: 10rem;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-2xl {

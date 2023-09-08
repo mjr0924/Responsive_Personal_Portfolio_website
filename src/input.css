@@ -7,6 +7,9 @@
       font-size: 62.5%;
       overflow-x: hidden;
     }
+    section{
+      @apply min-h-screen px-[7%]
+    }
     p,h1,h2,h3,h4,h5,h6{
       color: #333;
     }
@@ -29,6 +32,9 @@
     .header.sticky #darkMode-icon{
       color: #333;
       opacity: .9;
+    }
+    .heading{
+      @apply text-7xl text-center font-bold mb-20
     }
     .logo{
       @apply text-[2.5rem] text-main-color font-semibold cursor-pointer 
@@ -114,5 +120,15 @@
     .services-container .services-box:hover{
       box-shadow: 0 .1rem 2rem rgba(0,0,0,.2);
       transform: scale(1.05);
+    }
+    .portfolio-box{
+      @apply relative flex rounded-3xl overflow-hidden shadow-sm
+    }
+    .portfolio-box img{
+      @apply w-full
+    }
+    .portfolio-box .portfolio-layer{
+      background: linear-gradient(rgba(0,0,0,.1),#754ef9);
+      @apply absolute bottom-0 left-0 w-full h-full text-white-color flex items-center flex-col text-center px-0 py-16
     }
 }
