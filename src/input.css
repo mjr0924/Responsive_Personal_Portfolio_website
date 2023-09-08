@@ -16,6 +16,9 @@
     h3{
       @apply text-4xl font-bold leading-[1] my-1
     }
+    h4{
+      @apply text-5xl font-semibold leading-[1] my-1
+    }
     .header{
       @apply bg-transparent fixed top-0 left-0 w-full py-8 px-[7%] flex items-center justify-between  z-10 
     }
@@ -125,10 +128,26 @@
       @apply relative flex rounded-3xl overflow-hidden shadow-sm
     }
     .portfolio-box img{
-      @apply w-full
+      @apply w-full duration-500 ease-in
+    }
+    .portfolio-box:hover img{
+      @apply scale-110
     }
     .portfolio-box .portfolio-layer{
       background: linear-gradient(rgba(0,0,0,.1),#754ef9);
-      @apply absolute bottom-0 left-0 w-full h-full text-white-color flex items-center flex-col text-center px-0 py-16
+      @apply absolute bottom-0 left-0 w-full h-full !text-white-color flex justify-center items-center flex-col text-center px-0 py-16 opacity-0 duration-500 ease-in
+    }
+    .portfolio-box:hover .portfolio-layer{
+      @apply opacity-100
+    }
+    .portfolio-box .portfolio-layer p,
+    .portfolio-box .portfolio-layer h4{
+      @apply text-white-color
+    }
+    .portfolio-box .portfolio-layer a{
+      @apply inline-flex justify-center items-center w-20 h-20 bg-white-color rounded-[50%]
+    }
+    .portfolio-box .portfolio-layer a i{
+      @apply text-3xl text-text-color
     }
 }
