@@ -154,4 +154,10 @@
       border-top: .8rem solid #754ef9;
       border-bottom: .8rem solid #754ef9;
     }
+    .testimonial-box .swiper-pagination-bullet{
+      background-color: rgba(0,0,0,.8) !important;
+    }
+    .testimonial-box .swiper-pagination-bullet-active{
+      background-color: #754ef9 !important;
+    }
 }

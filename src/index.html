@@ -10,6 +10,9 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- boxicon css -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -182,12 +185,41 @@
     <div class="testimonial-container flex items-center flex-col w-full px-20 py-4">
         <h2 class="heading">Valuable <span>Testimonial</span></h2>
         <div class="testimonial-wrapper relative max-w-[90%] w-full p-20">
-            <div class="testimonial-box">
-                <div class="testimonial-content">
-                    <div class="testimonial-slide flex items-center flex-col bg-bg-color rounded-3xl shadow-2xl px-12 py-20 borderr">
-                        <img src="images/testimonial1.jpg" alt="" class="w-56 h-56 object-cover rounded-full border-2 border-solid border-bg-color outline-4 outline-main-color outline">
+            <div class="testimonial-box p-4 rounded-3xl overflow-hidden mySwiper">
+                <div class="testimonial-content swiper-wrapper ">
+                    <div
+                        class="testimonial-slide swiper-slide !flex items-center flex-col bg-bg-color rounded-3xl shadow-2xl px-12 py-20 borderr">
+                        <img src="images/testimonial1.jpg" alt=""
+                            class="w-56 h-56 object-cover rounded-full border-2 border-solid border-bg-color outline-4 outline-main-color outline">
                         <h3 class="my-8">jackson Levi</h3>
-                        <p class="text-2xl text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum neque quibusdam ut
+                        <p class="text-2xl text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            voluptatum neque quibusdam ut
+                            eligendi nam laudantium cum doloribus enim quas consequuntur aliquid nobis corrupti nemo
+                            sequi, magnam libero, dicta voluptas quo rerum fugiat praesentium. Quasi, sint hic. Fugiat
+                            assumenda cupiditate neque ad, molestiae corporis repudiandae quisquam modi cumque tempore
+                            exercitationem eveniet ipsa architecto. Eos consequatur, blanditiis excepturi fugiat
+                            praesentium quisquam.</p>
+                    </div>
+                    <div
+                        class="testimonial-slide swiper-slide !flex items-center flex-col bg-bg-color rounded-3xl shadow-2xl px-12 py-20 borderr">
+                        <img src="images/testimonial2.jpg" alt=""
+                            class="w-56 h-56 object-cover rounded-full border-2 border-solid border-bg-color outline-4 outline-main-color outline">
+                        <h3 class="my-8">flora Ocean</h3>
+                        <p class="text-2xl text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            voluptatum neque quibusdam ut
+                            eligendi nam laudantium cum doloribus enim quas consequuntur aliquid nobis corrupti nemo
+                            sequi, magnam libero, dicta voluptas quo rerum fugiat praesentium. Quasi, sint hic. Fugiat
+                            assumenda cupiditate neque ad, molestiae corporis repudiandae quisquam modi cumque tempore
+                            exercitationem eveniet ipsa architecto. Eos consequatur, blanditiis excepturi fugiat
+                            praesentium quisquam.</p>
+                    </div>
+                    <div
+                        class="testimonial-slide swiper-slide !flex items-center flex-col bg-bg-color rounded-3xl shadow-2xl px-12 py-20 borderr">
+                        <img src="images/testimonial3.jpg" alt=""
+                            class="w-56 h-56 object-cover rounded-full border-2 border-solid border-bg-color outline-4 outline-main-color outline">
+                        <h3 class="my-8">julian Grayson</h3>
+                        <p class="text-2xl text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            voluptatum neque quibusdam ut
                             eligendi nam laudantium cum doloribus enim quas consequuntur aliquid nobis corrupti nemo
                             sequi, magnam libero, dicta voluptas quo rerum fugiat praesentium. Quasi, sint hic. Fugiat
                             assumenda cupiditate neque ad, molestiae corporis repudiandae quisquam modi cumque tempore
@@ -195,11 +227,20 @@
                             praesentium quisquam.</p>
                     </div>
                 </div>
+                <div class="swiper-button-next !text-main-color !right-0"></div>
+                <div class="swiper-button-prev !text-main-color !left-0"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
 
+
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- boxicon js -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- script js  -->
     <script src="./script.js"></script>
 </body>
 
