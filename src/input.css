@@ -150,4 +150,8 @@
     .portfolio-box .portfolio-layer a i{
       @apply text-3xl text-text-color
     }
+    .borderr{
+      border-top: .8rem solid #754ef9;
+      border-bottom: .8rem solid #754ef9;
+    }
 }

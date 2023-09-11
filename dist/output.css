@@ -840,6 +840,11 @@ span{
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+.borderr{
+  border-top: .8rem solid #754ef9;
+  border-bottom: .8rem solid #754ef9;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -940,6 +945,10 @@ span{
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -957,6 +966,11 @@ span{
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .mb-0 {
@@ -979,16 +993,38 @@ span{
   display: grid;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
 .w-1\/2 {
   width: 50%;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .w-\[40vw\] {
   width: 40vw;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-\[90\%\] {
+  max-width: 90%;
+}
+
+.border-spacing-2 {
+  --tw-border-spacing-x: 0.5rem;
+  --tw-border-spacing-y: 0.5rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .cursor-pointer {
@@ -997,6 +1033,10 @@ span{
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -1023,9 +1063,64 @@ span{
   gap: 2rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
+}
+
+.border-bg-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 253 253 / var(--tw-border-opacity));
+}
+
+.bg-bg-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 253 253 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pb-12 {
@@ -1050,6 +1145,10 @@ span{
 
 .pt-40 {
   padding-top: 10rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -1097,6 +1196,44 @@ span{
 .text-white-color {
   --tw-text-opacity: 1;
   color: rgb(253 253 253 / var(--tw-text-opacity));
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.outline-dashed {
+  outline-style: dashed;
+}
+
+.outline-dotted {
+  outline-style: dotted;
+}
+
+.outline-double {
+  outline-style: double;
+}
+
+.outline-2 {
+  outline-width: 2px;
+}
+
+.outline-4 {
+  outline-width: 4px;
+}
+
+.outline-bg-color {
+  outline-color: #fdfdfd;
+}
+
+.outline-main-color {
+  outline-color: #754ef9;
 }
 
 .duration-500 {
