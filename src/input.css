@@ -160,4 +160,14 @@
     .testimonial-box .swiper-pagination-bullet-active{
       background-color: #754ef9 !important;
     }
+    form .input-box{
+      @apply flex justify-between flex-wrap
+    }
+    form .input-box input{
+      @apply !w-[49%]
+    }
+    form .input-box input,
+    form textarea{
+      @apply w-full p-6 text-2xl text-text-color bg-bg-color rounded-xl my-3 mx-0 shadow-md
+    }
 }
