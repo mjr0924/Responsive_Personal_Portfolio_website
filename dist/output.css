@@ -1116,6 +1116,10 @@ form .input-box input,
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1158,6 +1162,11 @@ form .input-box input,
   background-color: rgb(253 253 253 / var(--tw-bg-opacity));
 }
 
+.bg-main-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(117 78 249 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1186,6 +1195,11 @@ form .input-box input,
   padding-right: 5rem;
 }
 
+.px-\[7\%\] {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1194,6 +1208,11 @@ form .input-box input,
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-12 {
