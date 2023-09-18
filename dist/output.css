@@ -1052,6 +1052,10 @@ form .input-box input,
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .grid {
   display: grid;
 }
@@ -1086,6 +1090,12 @@ form .input-box input,
 
 .max-w-\[90\%\] {
   max-width: 90%;
+}
+
+.border-spacing-1 {
+  --tw-border-spacing-x: 0.25rem;
+  --tw-border-spacing-y: 0.25rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .cursor-pointer {
@@ -1144,6 +1154,10 @@ form .input-box input,
   border-radius: 9999px;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1157,6 +1171,11 @@ form .input-box input,
   border-color: rgb(253 253 253 / var(--tw-border-opacity));
 }
 
+.border-main-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(117 78 249 / var(--tw-border-opacity));
+}
+
 .bg-bg-color {
   --tw-bg-opacity: 1;
   background-color: rgb(253 253 253 / var(--tw-bg-opacity));
@@ -1167,6 +1186,11 @@ form .input-box input,
   background-color: rgb(117 78 249 / var(--tw-bg-opacity));
 }
 
+.bg-white-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 253 253 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1174,6 +1198,10 @@ form .input-box input,
 
 .p-20 {
   padding: 5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -1295,6 +1323,11 @@ form .input-box input,
   color: rgb(253 253 253 / var(--tw-text-opacity));
 }
 
+.text-text-color {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1313,6 +1346,30 @@ form .input-box input,
   outline-color: #754ef9;
 }
 
+.outline-transparent {
+  outline-color: transparent;
+}
+
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-75 {
+  transition-duration: 75ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.hover\:outline:hover {
+  outline-style: solid;
+}
+
+.hover\:outline-white:hover {
+  outline-color: #fff;
+}
+
+.hover\:outline-white-color:hover {
+  outline-color: #fdfdfd;
 }
